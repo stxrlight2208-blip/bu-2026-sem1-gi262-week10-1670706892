@@ -19,6 +19,10 @@ namespace MidtermExam.Prob04
         {
             // TODO: เขียนคำตอบแทนคำสั่ง throw ด้านล่าง
             throw new NotImplementedException();
+            values = [4, 2, 4, 1];
+            target = 4;
+            return 0;
+
         }
 
         /// <summary>ข้อ 04.2: ค้นหาตัวเลขด้วย Binary Search โดยลดช่วงค้นหาประมาณครึ่งหนึ่งต่อขั้น</summary>
@@ -45,6 +49,9 @@ namespace MidtermExam.Prob04
             // 4. ถ้าช่วงค้นหาหมดและยังไม่พบ ให้คืนค่าที่โจทย์กำหนดสำหรับกรณีไม่พบ
             // ลองตรวจกรณีสมาชิกเดียว สองสมาชิก เป้าหมายอยู่หัว/ท้าย และเป้าหมายอยู่นอกช่วงค่า
             throw new NotImplementedException();
+            sortedValues = new int[4];
+            target= 4;  
+            
         }
     }
 }
