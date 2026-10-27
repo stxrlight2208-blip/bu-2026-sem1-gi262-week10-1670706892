@@ -29,8 +29,10 @@ namespace MidtermExam.Prob02
         /// </remarks>
         public void Open(string url)
         {
-            // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
-            throw new NotImplementedException();
+            if (currentUrl == string.Empty)
+            {
+                currentUrl = url;
+            }
         }
 
         /// <summary>ย้อนกลับไปยังหน้าล่าสุดในประวัติย้อนกลับหนึ่งขั้น</summary>
@@ -40,8 +42,10 @@ namespace MidtermExam.Prob02
         /// </remarks>
         public void Back()
         {
-            // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
-            throw new NotImplementedException();
+            if (backHistory.Count > 0)
+            {
+                backHistory.Pop();
+            }
         }
 
         /// <summary>ไปข้างหน้าไปยังหน้าล่าสุดในประวัติไปข้างหน้าหนึ่งขั้น</summary>
@@ -51,8 +55,10 @@ namespace MidtermExam.Prob02
         /// </remarks>
         public void Forward()
         {
-            // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
-            throw new NotImplementedException();
+           if (forwardHistory.Count > 0)
+            {
+                forwardHistory.Pop();
+            }
         }
 
         /// <summary>อ่าน URL ของหน้าปัจจุบัน โดยไม่เปลี่ยนหน้าหรือประวัติใด ๆ</summary>
