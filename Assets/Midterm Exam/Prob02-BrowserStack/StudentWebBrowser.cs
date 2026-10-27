@@ -65,9 +65,10 @@ namespace MidtermExam.Prob02
         /// <returns>URL ปัจจุบัน หรือ string.Empty ถ้ายังไม่เคยเปิดหน้าเว็บ</returns>
         public string Current()
         {
-            // TODO: คืนค่าหน้าที่ติดตามอยู่ใน currentUrl แทนคำสั่ง throw ด้านล่าง
-            // เมธอดนี้ใช้เพื่ออ่านสถานะเท่านั้น จึงไม่ต้อง Push(), Pop() หรือ Clear() ประวัติ
-            throw new NotImplementedException();
+            if (!string.IsNullOrEmpty(currentUrl))
+            {
+                return currentUrl;
+            }
         }
     }
 }
