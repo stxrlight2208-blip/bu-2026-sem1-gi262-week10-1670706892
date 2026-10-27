@@ -17,11 +17,10 @@ namespace MidtermExam.Prob04
         /// </remarks>
         public int AS04_SequentialSearch(int[] values, int target)
         {
-            // TODO: เขียนคำตอบแทนคำสั่ง throw ด้านล่าง
-            throw new NotImplementedException();
-            values = [4, 2, 4, 1];
-            target = 4;
-            return 0;
+            if (values == null)
+            {
+                return 0;
+            }
 
         }
 
@@ -48,9 +47,10 @@ namespace MidtermExam.Prob04
             //    ต้องตัดตำแหน่งที่ตรวจแล้วออก เพื่อให้ช่วงเล็กลงและไม่เกิดการวนซ้ำไม่จบ
             // 4. ถ้าช่วงค้นหาหมดและยังไม่พบ ให้คืนค่าที่โจทย์กำหนดสำหรับกรณีไม่พบ
             // ลองตรวจกรณีสมาชิกเดียว สองสมาชิก เป้าหมายอยู่หัว/ท้าย และเป้าหมายอยู่นอกช่วงค่า
-            throw new NotImplementedException();
-            sortedValues = new int[4];
-            target= 4;  
+            if ((sortedValues == null) || (sortedValues.Length == 0))
+            {
+                return 0;
+            } 
             
         }
     }
